@@ -25,7 +25,7 @@
   <tbody>
   	@foreach($total_usuarios as $usuario)
 	    <tr>
-	      <th>{{ $usuario->id }}</th>
+	      <th>{{ $usuario->id }}</th> 
 	      <th>{{ $usuario->folio }}</th>
 	      <td>{{ $usuario->email }}</td>
 	      <td><a href="" class="btn btn-success">Editar</a> <a href="" class="btn btn-warning">PDF</a></td>
