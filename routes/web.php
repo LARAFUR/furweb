@@ -12,8 +12,8 @@
 */
 
 Route::get('/', function () {
-    //return view('welcome');
-    return view('bienvenido');
+    //return view('bienvenido');
+    return view('auth/login');
 });
 
 Route::group(['prefix' => 'furweb'], function(){
@@ -22,3 +22,7 @@ Route::group(['prefix' => 'furweb'], function(){
 	Route::resource('identificacion-geografica','IdGeograficaController');
 	Route::resource('usuario','UserController');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

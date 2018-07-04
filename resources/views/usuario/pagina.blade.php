@@ -19,7 +19,8 @@
       <th>#</th>
       <th>Folio de Tarjeta</th>
       <th>Correo Electrónico</th>
-      <th>Acción</th>
+      <th>Actualizar información</th>
+      <th>Formato</th>
     </tr>
   </thead>
   <tbody>
@@ -27,8 +28,9 @@
 	    <tr>
 	      <th>{{ $usuario->id }}</th> 
 	      <th>{{ $usuario->folio }}</th>
-	      <td>{{ $usuario->email }}</td>
-	      <td><a href="" class="btn btn-success">Editar</a> <a href="" class="btn btn-warning">PDF</a></td>
+	      <th>{{ $usuario->email }}</th>
+	      <td><a href="{{ route('identificacion-geografica.edit', $usuario->id) }}" class="btn btn-success">Sección 1</a> <a href="{{ route('direccion-vivienda.edit', $usuario->id) }}" class="btn btn-info">Sección 2</a> <a href="{{ route('datos-personales.edit', $usuario->id) }}" class="btn btn-primary">Sección 3</a></td>
+        <td><a href="" class="btn btn-warning">PDF</a></td>
 	    </tr>
 	@endforeach
   </tbody>

@@ -5,18 +5,18 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="">FURWeb</a>
+      <a class="navbar-brand" href="">IMEJ</a>
     </div>
     <div class="nav navbar-nav">
-      <div class="active"><a href="">Inicio</a></div>
+      <div class="active"><a href="{{ route('usuario.index') }}">FURWeb | Inicio</a></div>
     </div>
-    <div class="dropdown">
+    <!--<div class="dropdown">
       <a class="dropdown-toggle" data-toggle="dropdown" href="">Apartado "A"</a>
         <ul class="dropdown-menu">
           <li><a href="#">Identificación Geográfica</a></li>
           <li><a href="#">Dirección de la Vivienda</a></li>
           <li><a href="#">Datos Personales</a></li>
-        </ul>
+        </ul>-->
     </div>
 
   </div>
